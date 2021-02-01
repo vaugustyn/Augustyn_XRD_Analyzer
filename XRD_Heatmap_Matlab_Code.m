@@ -20,6 +20,7 @@ for n=0:19 %for loop to read files
     fclose(fileID) %close current file
     two_theta = [two_theta C{1}] %Copy the 2-theta values (1st column) into a new matrix
     intensity = [intensity C{2}] %Copy the intensity values (2nd column) into a new matrix
+    time = [time repmat(n*3,691,1)]
 end %end the for loop
 
 
